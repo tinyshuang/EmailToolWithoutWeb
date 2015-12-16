@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mail>
+	<!--邮件服务器IP或名称-->
+	<MailHost>smtp.exmail.qq.com</MailHost>
+	<!--登陆邮件服务器的名称-->
+	<Username>usernam</Username>	
+	<!--登陆邮件服务器的密码-->
+	<Password>password</Password>
+	<!--发送邮件的电邮地址-->
+	<MailFrom>sendMail</MailFrom>
+	<!--接收邮件的电邮地址-->
+	<MailTo>receviedMail</MailTo>
+	<!--发送邮件的使用的编码-->
+	<MailCharset>utf-8</MailCharset>
+	<!--包含电子邮件的文本文件，每行一个电子邮件-->
+	<MailAddressFile>src/email.txt</MailAddressFile>
+	<!--邮件标题-->
+	<MailTitle>邮件测试</MailTitle>
+	<!--邮件发送的内容，可以是本地的网页，也可是网络上的网页.如果是文本文件，直接将后缀名txt改为htm即可-->
+	<MailHtmlPath>src/text.htm</MailHtmlPath>
+	<!--附件所在本地目录，将需要发送的所有附件都放于该目录中，其中可以有子目录-->
+	<MailAttachmentPath>F://pics//test.htm</MailAttachmentPath>
+	<!--保存发送成功邮件的文件，可以配置为绝对路径，也可以配置为相对路径，不配置不保存-->
+	<SaveMailSendedSuccFile>src/email_succ.txt</SaveMailSendedSuccFile>
+	<!--包含已经发送了的电子邮件的地址.可以配置为绝对路径，也可以配置为相对路径，不配置不保存-->
+	<SaveMailSendedFailFile>src/email_fail.txt</SaveMailSendedFailFile>
+</Mail>
